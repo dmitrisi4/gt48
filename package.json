@@ -27,7 +27,7 @@
     "ordering",
     "identifier"
   ],
-  "author": "Dmytro Sichkar",
+  "author": "Dimitri Sichkar <dmitri.sichkar@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",

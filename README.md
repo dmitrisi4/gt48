@@ -327,7 +327,7 @@ GT48 works in all modern browsers and Node.js environments:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/gt48.git
+git clone https://github.com/dmitrisi4/gt48.git
 cd gt48
 
 # Run tests
