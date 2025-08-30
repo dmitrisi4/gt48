@@ -1,0 +1,60 @@
+{
+  "name": "gt48",
+  "version": "1.0.0",
+  "description": "High-performance 48-bit timestamp generator with microsecond precision and guaranteed uniqueness",
+  "main": "src/timestamp.js",
+  "types": "src/timestamp.d.ts",
+  "scripts": {
+    "test": "node test/timestamp.test.js",
+    "test:watch": "npm run test",
+    "test:coverage": "npm run test",
+    "benchmark": "node benchmark/benchmark.js",
+    "build": "npm run test",
+    "prepublishOnly": "npm run build && npm run benchmark",
+    "start": "npm run test && npm run benchmark"
+  },
+  "keywords": [
+    "timestamp",
+    "generator",
+    "48-bit",
+    "microsecond",
+    "precision",
+    "monotonic",
+    "unique",
+    "performance",
+    "base64url",
+    "distributed",
+    "ordering",
+    "identifier"
+  ],
+  "author": "Dmytro Sichkar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmitrisi4/gt48"
+  },
+  "bugs": {
+    "url": "https://github.com/dmitrisi4/gt48/issues"
+  },
+  "homepage": "https://github.com/dmitrisi4/gt48#readme",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "benchmark": "^2.1.4"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./src/timestamp.js",
+      "require": "./src/timestamp.js",
+      "types": "./src/timestamp.d.ts"
+    }
+  }
+}
